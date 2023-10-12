@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchPrompt,updatePromptData } from "@services/updateApis";
+import { fetchPrompt, updatePromptData } from "@services/updateApis";
 
 const updatePromptSlice = createSlice({
   name: "updateprompt",

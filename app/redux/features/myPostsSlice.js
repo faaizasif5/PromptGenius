@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchMyPosts,deletePost } from "@services/deleteApi";
+import { fetchMyPosts, deletePost } from "@services/deleteApi";
 
 const myPostsSlice = createSlice({
   name: "myPosts",

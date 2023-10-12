@@ -102,12 +102,20 @@
 }
 .custom_gradient {
   --custom-gradient-from-color: #454b59; /* Define the start color */
-  --custom-gradient-from-position: var(--tw-gradient-from-position); /* Use the specified position */
+  --custom-gradient-from-position: var(
+    --tw-gradient-from-position
+  ); /* Use the specified position */
   --custom-gradient-to-color: #0891b2; /* Define the end color */
-  --custom-gradient-to-position: var(--tw-gradient-to-position); /* Use the specified position */
+  --custom-gradient-to-position: var(
+    --tw-gradient-to-position
+  ); /* Use the specified position */
 
   /* Create the gradient with custom colors and positions */
-  background: linear-gradient(to right, var(--custom-gradient-from-color) var(--custom-gradient-from-position), var(--custom-gradient-to-color) var(--custom-gradient-to-position));
+  background: linear-gradient(
+    to right,
+    var(--custom-gradient-from-color) var(--custom-gradient-from-position),
+    var(--custom-gradient-to-color) var(--custom-gradient-to-position)
+  );
 
   /* Clip text and make it transparent */
   -webkit-background-clip: text;

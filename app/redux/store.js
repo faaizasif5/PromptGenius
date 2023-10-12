@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
 import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import createPromptReducer from "./features/createPrompt";
 import myPostsReducer from "./features/myPostsSlice";
-import updateReducer from "./features/updatePrompt"
+import updateReducer from "./features/updatePrompt";
 
 const store = configureStore({
   reducer: {
     createPrompt: createPromptReducer,
     myPosts: myPostsReducer,
-    updateprompt:updateReducer,
+    updateprompt: updateReducer,
   },
   middleware: [thunk],
 });

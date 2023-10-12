@@ -22,5 +22,5 @@ export const createPromptAsync = createAsyncThunk(
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
-  }
+  },
 );

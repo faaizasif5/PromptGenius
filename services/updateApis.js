@@ -6,7 +6,7 @@ export const fetchPrompt = createAsyncThunk(
     const response = await fetch(`/api/prompt/${promptId}`);
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 export const updatePromptData = createAsyncThunk(
@@ -27,5 +27,5 @@ export const updatePromptData = createAsyncThunk(
     } catch (error) {
       throw error;
     }
-  }
+  },
 );
